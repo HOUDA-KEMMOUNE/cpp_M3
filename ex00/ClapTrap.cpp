@@ -63,7 +63,7 @@ void	ClapTrap::takeDamage( unsigned int amount )
 	if (amount >= Hit_Points)
 	{
 		Hit_Points = 0;
-		std::cout << "ClapTrap " << name << " takes  " << amount << " points of dammage and is destroyed! HP reduced to 0" << std::endl;
+		std::cout << "\033[33mClapTrap " << name << " takes  " << amount << " points of dammage and is destroyed! HP reduced to 0\033[0m" << std::endl;
 		std::cout << std::endl;
 		return ;
 	}
