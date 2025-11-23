@@ -2,10 +2,10 @@
 
 ScavTrap::ScavTrap( void )
 {
-    name = "Bot 2.0";
-    Hit_Points = 100;
-    Energy_Points = 50;
-    Attack_Damage = 20;   
+    this->name = "Bot 2.0";
+    this->Hit_Points = 100;
+    this->Energy_Points = 50;
+    this->Attack_Damage = 20;   
     std::cout << "\033[34mScavTrap " << name << " default constructor called\033[0m" << std::endl;
     std::cout << std::endl;
 }
