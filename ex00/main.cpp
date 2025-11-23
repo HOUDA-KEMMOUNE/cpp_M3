@@ -14,8 +14,7 @@ int main()
 		a.beRepaired(5);
 		a.attack("some other other robot");
 		b.beRepaired(3);
-		for (int i = 0; i < 12; i++)
-			b.attack("Cody-clone");
+		b.attack("Cody-clone");
 		b.beRepaired(3);
 		//std::cout << "\033[34mDeconstructing\033[0m" << std::endl;
 	}
