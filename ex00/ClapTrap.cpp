@@ -55,18 +55,16 @@ void	ClapTrap::takeDamage( unsigned int amount )
 	{
 		std::cout << "\033[33mClapTrap default is already dead, stop beating it.\033[0m" << std::endl;
 		std::cout << std::endl;
+		return ;
 	}
-	if (Hit_Points <= amount)
-		Hit_Points = 0;
-	else
-		Hit_Points -= amount;
-	if (amount >= Hit_Points)
+	else if (Hit_Points <= amount)
 	{
 		Hit_Points = 0;
 		std::cout << "\033[33mClapTrap " << name << " takes  " << amount << " points of dammage and is destroyed! HP reduced to 0\033[0m" << std::endl;
 		std::cout << std::endl;
 		return ;
 	}
+	Hit_Points -= amount;
 	std::cout << "ClapTrap " << name << " takes " << amount << " points of dammage! Current HP is now " << Hit_Points << std::endl;
 	std::cout << std::endl;
 }

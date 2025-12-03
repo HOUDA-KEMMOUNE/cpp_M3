@@ -11,7 +11,7 @@ int main()
 
     std::cout << "-----------------------------------------\n" << std::endl;
 
-    Bot.attack("Kaska");
+    Bot.attack("GRR");
     Bot.takeDamage(130);
     Bot.beRepaired(190);
 }
